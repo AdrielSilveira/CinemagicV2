@@ -19,14 +19,14 @@ export default function Login() {
                                 <input className={email !== "" ? 'has-val input-login-form' : 'input-login-form'} type="email" 
                                 value={email}
                                 onChange={e => setEmail(e.target.value)}
-                                />
+                                required />
                                 <span className="input-effect" data-placeholder='Email'></span>
                             </div>
-                            <div className="wrap-input">
+                            <div className="wrap-input" >
                                 <input className={password !== "" ? 'has-val input-login-form' : 'input-login-form'} type="password" 
                                 value={password}
                                 onChange={e => setPassword(e.target.value)}
-                                />
+                                required />
                                 <span className="input-effect" data-placeholder='Senha'></span>
                             </div>
 
